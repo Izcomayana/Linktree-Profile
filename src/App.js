@@ -21,7 +21,7 @@ function App() {
         <div className="my-2.5">
           <h2 id='twitter' className='text-2xl font-bold'>mayana_techkid</h2>
           {/* hidden */}
-          <h4 id='slack' className='invisible'>Mayana</h4>
+          <h4 id='slack' className='invisible'>Techkid</h4>
         </div>
       </header>
       <body>
@@ -34,7 +34,7 @@ function App() {
           target="_blank" id="books" className='anchor-tags py-6 px-8 w-full bg-gray-200 mb-6 
           text-base sm:text-xl font-semibold rounded-lg'>Zuri Books</a>
 
-          <a href="https://books.zuri.team/python-for-beginners?ref_id=Mayana" target="_blank" id="book__python"
+          <a href="https://books.zuri.team/python-for-beginners?ref_id=Techkid" target="_blank" id="book__python"
           subtext="Right books that'll take your python skills to next level" className='anchor-tags py-6 
           px-8 w-full bg-gray-200 mb-6 text-base sm:text-xl font-semibold rounded-lg'>Python Books</a>
 
