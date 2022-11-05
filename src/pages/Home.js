@@ -22,7 +22,11 @@ function App() {
           <h4 id='slack' className='invisible'>Techkid</h4>
         </div>
       </header>
-      <HomeBody />
+      
+      <body>
+        <HomeBody />
+      </body>
+  
       <hr className='my-7' />
       <Footer />
     </div>

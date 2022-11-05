@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function ContactForm() {
   const initialValues = {
@@ -18,7 +18,6 @@ export default function ContactForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]:value })
-    console.log(formValues);
   }
 
   const handleSubmit = (e) => {
@@ -28,13 +27,6 @@ export default function ContactForm() {
     setIsSubmit(true);
     setFormValues(initialValues);
   }
-
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
-    }
-  }, [formErrors]);
 
   const validate = (values) => {
     const errors = {};
@@ -64,7 +56,7 @@ export default function ContactForm() {
   return (
     <>
       {Object.keys(formErrors).length === 0 && isSubmit ? (
-        <div className="success-modal top-0 bg-black left-0 flex justify-center opacity-60 h-screen w-screen absolute items-center">
+        <div className="success-modal top-0 bg-black left-0 flex justify-center opacity-90 h-screen w-screen absolute items-center">
           <div className='text-white flex flex-col'>
             <div>
               <span className='text-4xl font-bold text-green-500'>Message Sent</span>
@@ -78,7 +70,7 @@ export default function ContactForm() {
           </div>
         </div>
       ) : (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="mb-20">
         <div className="names sm:flex sm:justify-between">
           <div className="sm:w-[45%] firstname flex flex-col mb-7">
             <label className='text-base font-medium mb-0.5'>First name</label>

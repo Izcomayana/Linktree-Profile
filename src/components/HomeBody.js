@@ -7,7 +7,7 @@ import slack from "../images/slack.jpg"
 export default function HomeBody() {
   return (
     <>
-      <body>
+      <div>
         <div className="my-7 flex flex-col mx-auto sm:w-9/12">
           <a
             className='py-6 px-8 w-full bg-gray-200 mb-6 text-base sm:text-xl font-semibold rounded-lg'
@@ -73,7 +73,7 @@ export default function HomeBody() {
           <img src={slack} alt="slack-icon" />
           <img src={github} alt="github-icon" />
         </div>
-      </body>
+      </div>
     </>
   )
 }
